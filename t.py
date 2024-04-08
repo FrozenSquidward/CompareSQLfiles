@@ -4,7 +4,7 @@ import re
 
 modify_sql = []
 
-# 编译正则表达式模式  （某些sql导出之后建表语句);不在一行）
+# 编译正则表达式模式  （某些sql（PGSQL）导出之后建表语句);不在一行）
 pattern = re.compile(r'CREATE TABLE "([^"]+)" \((.*?)\)\n;', re.DOTALL | re.MULTILINE) 
 # 结尾不换行的正则 
 pattern2 = re.compile(r'CREATE TABLE "([^"]+)" \((.*?)\);', re.DOTALL | re.MULTILINE)  
