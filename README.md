@@ -1,2 +1,2 @@
 # CompareSQLfiles
-比较两个建表sql文件
+以path_to_first_sql_file.sql为主文件对比区别，生成修改或新增语句
